@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  blog-app:
+    build: .
+    container_name: prediction-app
+    ports: 
+      - "5005:5005"
+    restart: unless-stopped
